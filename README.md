@@ -176,17 +176,3 @@ Add screenshots of:
 * Learning Dashboard
 
 ---
-
-## Author
-
-Rishabh Jain
-
-B.Tech Computer Science and Engineering
-
-GitHub: https://github.com/RjOptimus01
-
----
-
-## Support
-
-If you found this project useful, consider giving it a star on GitHub.
