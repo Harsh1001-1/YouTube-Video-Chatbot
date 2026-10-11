@@ -1,0 +1,354 @@
+.dashboard {
+    min-height: calc(100vh - 80px);
+    padding: 50px 7%;
+    background: #f8f9fb;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 40px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 20px;
+}
+
+.dashboard-label {
+    margin-bottom: 8px;
+    color: #dc2626;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.dashboard-header h1 {
+    margin: 0;
+    color: #111827;
+    font-size: 36px;
+}
+
+.dashboard-header > div > p:last-child {
+    max-width: 650px;
+    margin-top: 12px;
+    color: #6b7280;
+    line-height: 1.7;
+}
+
+.dashboard-action {
+    flex-shrink: 0;
+    padding: 13px 22px;
+    border-radius: 10px;
+    background: #dc2626;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.dashboard-action:hover {
+    background: #b91c1c;
+}
+
+.dashboard-section {
+    margin-top: 35px;
+    padding: 30px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+}
+
+.section-heading h2 {
+    margin: 0;
+    color: #111827;
+}
+
+.section-heading p {
+    margin-top: 7px;
+    color: #6b7280;
+}
+
+.dashboard-empty {
+    margin-top: 25px;
+    padding: 45px 20px;
+    border: 1px dashed #d1d5db;
+    border-radius: 14px;
+    text-align: center;
+}
+
+.dashboard-empty h3 {
+    margin-bottom: 8px;
+    color: #374151;
+}
+
+.dashboard-empty p {
+    margin-bottom: 20px;
+    color: #6b7280;
+}
+
+.dashboard-empty a {
+    color: #dc2626;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.conversation-list {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.conversation-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    transition: 0.3s ease;
+}
+
+.conversation-card:hover {
+    transform: translateY(-2px);
+    border-color: #dc2626;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.conversation-card h3 {
+    margin: 0 0 7px;
+    color: #111827;
+    font-size: 17px;
+}
+
+.conversation-card p {
+    margin: 4px 0;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+.conversation-video-id {
+    word-break: break-all;
+}
+
+.conversation-date {
+    flex-shrink: 0;
+    color: #6b7280;
+    font-size: 13px;
+}
+
+.conversation-card {
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .dashboard {
+        padding: 30px 20px;
+    }
+
+    .dashboard-header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 28px;
+    }
+
+    .dashboard-header h1 {
+        font-size: 28px;
+    }
+}
+
+.recent-videos-grid {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.recent-video-card {
+    overflow: hidden;
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.recent-video-card:hover {
+    transform: translateY(-4px);
+    border-color: #dc2626;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.recent-video-card img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.recent-video-content {
+    padding: 18px;
+}
+
+.recent-video-content h3 {
+    margin: 0 0 8px;
+    color: #111827;
+    font-size: 17px;
+}
+
+.recent-video-content p {
+    margin: 0 0 8px;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+.recent-video-content span {
+    color: #9ca3af;
+    font-size: 13px;
+}
+
+.dashboard {
+    min-height: calc(100vh - 72px);
+    padding: 48px 6% 70px;
+    background:
+        linear-gradient(180deg, #f9fafb 0%, #f3f4f6 100%);
+}
+
+.dashboard-header {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 35px rgba(17, 24, 39, 0.04);
+}
+
+.dashboard-header::after {
+    content: "";
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    right: -80px;
+    top: -100px;
+    background: rgba(220, 38, 38, 0.06);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.dashboard-action {
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 7px 18px rgba(220, 38, 38, 0.2);
+}
+
+.dashboard-action:hover {
+    background: #b91c1c;
+    transform: translateY(-2px);
+}
+
+.dashboard-section {
+    box-shadow: 0 5px 25px rgba(17, 24, 39, 0.025);
+}
+
+.section-heading {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f3f4f6;
+}
+
+.section-heading h2 {
+    font-size: 22px;
+}
+
+.recent-video-card:focus,
+.conversation-card:focus {
+    outline: 3px solid rgba(220, 38, 38, 0.15);
+    border-color: #dc2626;
+}
+
+.conversation-card {
+    background: #ffffff;
+}
+
+.conversation-card:hover {
+    background: #fefefe;
+}
+
+@media (max-width: 768px) {
+    .dashboard {
+        padding: 30px 18px 50px;
+    }
+
+    .dashboard-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 22px;
+        padding: 26px 22px;
+        border-radius: 16px;
+    }
+
+    .dashboard-header h1 {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    .dashboard-action {
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .dashboard-section {
+        margin-top: 25px;
+        padding: 22px 18px;
+        border-radius: 16px;
+    }
+
+    .recent-videos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .conversation-card {
+        align-items: flex-start;
+        padding: 17px;
+    }
+}
+
+@media (max-width: 480px) {
+    .dashboard {
+        padding: 22px 14px 40px;
+    }
+
+    .dashboard-header {
+        padding: 22px 18px;
+    }
+
+    .dashboard-header h1 {
+        font-size: 24px;
+    }
+
+    .dashboard-label {
+        font-size: 12px;
+    }
+
+    .dashboard-section {
+        padding: 20px 15px;
+    }
+
+    .section-heading h2 {
+        font-size: 20px;
+    }
+
+    .conversation-card {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .conversation-date {
+        align-self: flex-start;
+    }
+
+    .dashboard-empty {
+        padding: 35px 15px;
+    }
+}
